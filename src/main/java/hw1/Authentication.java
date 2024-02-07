@@ -10,7 +10,6 @@ public class Authentication {
 
     public static boolean checkCredentials(String login, String password, String confirmPassword) {
         try {
-
             Matcher loginMatcher = LOGIN_AND_PASSWORD_PATTERN.matcher(login);
             Matcher passwordMatcher = LOGIN_AND_PASSWORD_PATTERN.matcher(password);
 

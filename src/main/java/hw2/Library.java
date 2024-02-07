@@ -6,6 +6,7 @@ public class Library {
     public static final String ADVENTURE_BOOK = "Приключения";
     public static final String ENCYCLOPEDIA = "Энциклопедия";
     public static final String DICTIONARY = "Словарь";
+
     public static void main(String[] args) {
 
         Reader reader = new Reader("Петров В. В.", 013666, "Ravenclaw", LocalDate.of(2000, 01, 01), "88005553535");
@@ -20,7 +21,6 @@ public class Library {
 
         reader.returnBook(3);
         reader.returnBook(ADVENTURE_BOOK, ENCYCLOPEDIA, DICTIONARY);
-
 
     }
 }
