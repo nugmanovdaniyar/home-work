@@ -1,4 +1,4 @@
-package com.company.details;
+package hw3_3.company.details;
 
 public class Engine {
     private final int power;

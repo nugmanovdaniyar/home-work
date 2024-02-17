@@ -1,15 +1,15 @@
 package hw3_2;
 
 class Aspirant extends Student {
-    String scientificWork;
+    private String scientificWork;
 
-    public Aspirant(String firstName, String lastName, String group, double averageMark, String scientificWork) {
-        super(firstName, lastName, group, averageMark);
-        this.scientificWork = scientificWork;
+    public Aspirant(StudentBuilder builder) {
+        super(builder);
+        this.scientificWork = builder.scientificWork;
     }
 
     @Override
     public int getScholarship() {
-        return (averageMark == 5) ? 2500 : 2200;
+        return getAverageMark() == 5 ? 2500 : 2200;
     }
 }

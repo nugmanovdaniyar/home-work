@@ -1,21 +1,21 @@
-package com.company.vehicles;
+package hw3_3.company.vehicles;
 
-import com.company.details.Engine;
-import com.company.professions.Driver;
+import hw3_3.company.details.Engine;
+import hw3_3.company.professions.Driver;
 
 public class Car {
-    private final String carModel;
-    private final String carClass;
-    private final double weight;
-    private final Driver driver;
-    private final Engine engine;
+    private String carModel;
+    private String carClass;
+    private double weight;
+    private Driver driver;
+    private Engine engine;
 
-    public Car(String carModel, String carClass, double weight, Driver driver, Engine engine) {
-        this.carModel = carModel;
-        this.carClass = carClass;
-        this.weight = weight;
-        this.driver = driver;
-        this.engine = engine;
+    public Car(CarBuilder builder) {
+        this.carModel = builder.carModel;
+        this.carClass = builder.carClass;
+        this.weight = builder.weight;
+        this.driver = builder.driver;
+        this.engine = builder.engine;
     }
 
     public void start() {

@@ -1,4 +1,4 @@
-package com.company.professions;
+package hw3_3.company.professions;
 
 public class Driver extends Person {
     private final int drivingExperience;

@@ -1,7 +1,7 @@
 package hw3_1;
 
 public class Magazine implements Printable {
-    private final String title;
+    private String title;
 
     public Magazine(String title) {
         this.title = title;
@@ -12,10 +12,10 @@ public class Magazine implements Printable {
         System.out.println("Magazine: " + title);
     }
 
-    public static void printMagazines(Printable[] printable) {
-        for (Printable i : printable) {
-            if (i instanceof Magazine) {
-                i.print();
+    public static void printMagazines(Printable[] printables) {
+        for (Printable printable : printables) {
+            if (printable instanceof Magazine) {
+                printable.print();
             }
         }
     }
